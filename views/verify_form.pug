@@ -1,0 +1,42 @@
+html
+html
+   head
+      title Asset Registration
+   body
+      form(action = "/change/register/add", method = "POST")
+         div
+            label(for = "firstname") First Name:
+            input(name = "firstname" value = "")
+         br
+         div
+            label(for = "lastname") Last Name:
+            input(name = "lastname" value = "")
+         br
+         div
+            label(for = "Address") Property Address:
+            input(type="text" name = "Address" value = "")
+         br
+         div
+            label(for = "ethAddress") Eth Address:
+            input(type="text" name = "ethAddress" value = "")
+         br
+         div
+            label(for = "email") Email:
+            input(type="text" name = "email" value = "")
+         br
+         div
+            label(for = "Hash") Private + Public Key Hash:
+            input(type="text" name = "Hash" value = "")
+         br
+         
+         div
+            p Put date in dd/mm/yyyy format
+            
+            label(for = "Date") Date of Registration:
+            input(type="text" name = "Date" value = "")
+         br
+        
+         div
+            label(for = "ID") Social Security ID
+            input(name="ID" value="")
+         button(type = "submit") Submit
